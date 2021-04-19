@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="containerone">
         <div class="row">
           <div class="col" id = "covidtitle"> COVID TRACKER </div>
           <a class="col" id = "covidlink" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">Click to learn more about COVID</a>
@@ -42,6 +42,37 @@
           </div>
         </div>
         <div class="chart"><canvas id="linechart"></canvas></div>
+      </div>
+      <div class ="subscribe">Subscribe for more COVID updates!</div>
+      <div class="container">
+
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvovwoyr" method="post">
+          <fieldset id="fs-frm-inputs">
+  
+            <div class="containernames" id="containernames">
+              <div class="containernameone" id="containernameone">
+                <label id = "namesid" class = "names" for="full-name">Full Name</label>
+              </div>
+              <div class="containernametwo">
+                <input class = "name" type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              </div>
+            </div>
+  
+            <div class="containeremails" id="containeremails">
+              <div class="containeremailone" id="containeremailone">
+                <label id = "emailsid" class = "emails" for="email-address">Email Address</label>
+              </div>
+              <div class="containeremailtwo">
+                <input class = "email" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="submitbutton">
+            <input class = "button" type="submit" value="Submit">
+          </div>
+
+        </form>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
