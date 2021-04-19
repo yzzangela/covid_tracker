@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>COVID TRACKER</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col" id = "covidtitle"> COVID TRACKER </div>
+          <a class="col" id = "covidlink" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">Click to learn more about COVID</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="trackerbackground">
+        <div class ="trackerbackgroundtwo">
+          <div class ="country">
+            <div class="countryname">Loading...</div>
+            <div class ="changecountry">Click for more countries</div>
+            <div class="searchcountry hide">
+              <div class ="searchbox"><input type ="text" id ="searchinput" placeholder ="Search"/></div>
+              <div class ="listofcountries"></div>
+            </div>
+          </div>
+          <div class ="totalcases">
+            <div class="caption">Total Cases</div>
+            <div class ="cases">0</div>
+            <div class="updatedcasesone">0+</div>
+          </div>
+          <div class="deathcases">
+            <div class="caption">Deaths</div>
+            <div class ="cases">0</div>
+            <div class="updatedcasestwo">0+</div>
+          </div>
+        </div>
+        <div class="chart"><canvas id="linechart"></canvas></div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="http://www.geoplugin.net/javascript.gp" language="JavaScript" type="text/javascript"></script>
+    <script src="js/countries.js"></script>
+    <script src="js/datagraph.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+header{
+    width: 100%;
+    height: 100px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    text-shadow: 10px 10px 20px black;
+    margin: 16px auto;
+    margin-bottom: 100px;
+    max-width: 1200px;
+}
+
+body{
+    background-color: #111111;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Avenir';
+    padding-bottom: 3%;
+}
+
+.hide{
+    display: none;
+}
+
+#covidlink{
+    color: white;
+    border-radius: 50px;
+    background-color: #12374F;
+    box-shadow: 5px 5px 8px black;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#covidtitle {
+    color: white;
+    font-size: 65px;
+    text-shadow: 10px 10px 4px black;
+    padding-bottom: 30px;
+}
+
+.chart{
+    min-height: 550px;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 80%;
+    height: 70vh;
+}
+
+.trackerbackground{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url('../img/mask.jpg');
+    width: 100%;
+    box-shadow: 8px 8px 10px black;
+    border-radius: 20px;
+    background-size: cover;
+
+}
+
+.trackerbackgroundtwo{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    align-items: center;
+    color: white;
+}
+
+.country{
+    height: 100px;
+}
+
+.totalcases{
+    height: 100px;
+}
+
+.deathcases{
+    height: 100px;
+}
+
+.countryname{
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.changecountry{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.caption{
+    font-size: 1.5em;
+}
+
+.updatedcasestwo .updatedcasesone{
+    font-size: 1.2em;
+}
+
+.totalcases .cases{
+    font-weight: bold;
+    font-size: 2em;
+    color: #03d3fc;
+}
+
+.deathcases .cases{
+    font-size: 2em;
+    font-weight: bold;
+    color: #ed0047;
+}
+
+.searchbox{
+    z-index: 1;
+    position: absolute;
+    justify-content: space-between;
+    background-color: black;
+    display: flex;
+    width: 200px;
+    height: 30px;
+}
+
+.searchbox img{
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.searchcountry{
+    position: relative;
+    top: 10px;
+}
+
+.searchbox input{
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    color: white;
+    font-size: 1.1em;
+    width: 360px;
+    height: 25px;
+}
+
+.listofcountries{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    background-color: black;
+    opacity: 0.8;
+    width: 200px;
+    height: 300px;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+.listofcountries ul{
+    width: 100%;
+    cursor: pointer;
+}
+
+.listofcountries ul li:hover{
+    border-left: 2px solid #03d3fc;
+    cursor: pointer;
+}
+
+.listofcountries ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+.listofcountries::-webkit-scrollbar-thumb {
+background: #03d3fc;
+}
+
+.listofcountries::-webkit-scrollbar-thumb:hover {
+background: #03d3fc;
+}
+
+.listofcountries::-webkit-scrollbar-track {
+    background: black;
+    }
+
+.listofcountries::-webkit-scrollbar {
+    width: 5px;
+}
+
+@media screen and (max-width: 600px){
+    .trackerbackgroundtwo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
