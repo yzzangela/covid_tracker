@@ -186,6 +186,39 @@ background: #03d3fc;
     width: 5px;
 }
 
+.container{
+    margin: 30px auto;
+    text-align: center;
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border-color: #12374F;
+    border-style: dotted;
+}
+
+.submitbutton{
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#containernames{
+    padding-bottom: 20px;
+}
+
+#namesid, #emailsid{
+    color: white;
+}
+
+.subscribe{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 10px 10px 20px black;
+}
+
 @media screen and (max-width: 600px){
     .trackerbackgroundtwo{
         display: flex;
