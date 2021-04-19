@@ -42,9 +42,9 @@ body{
 
 .chart{
     min-height: 550px;
-    margin: 0 auto;
-    padding: 50px 0;
-    width: 80%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    width: 90%;
     height: 70vh;
 }
 
@@ -54,29 +54,34 @@ body{
     box-shadow: 8px 8px 10px black;
     border-radius: 20px;
     background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto;
 
 }
 
 .trackerbackgroundtwo{
+    width: 65%;
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 50px;
-    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
     color: white;
+    margin: 0 auto;
+    padding-left: 60px;
 }
 
 .country{
     height: 100px;
+    margin-bottom:50px;
 }
 
 .totalcases{
     height: 100px;
+    margin-bottom:50px;
 }
 
 .deathcases{
     height: 100px;
+    margin-bottom:50px;
 }
 
 .countryname{
