@@ -71,11 +71,27 @@ function updateStats() {
   newcaseselement.innerHTML = `${updatedtotalcases}`;
   deathselement.innerHTML = totaldeaths;
   newdeathselement.innerHTML = `${updateddeathscases}`;
-  dates.forEach((date) => {
-    formatedDates.push(formatDate(date));});}
+  dates.forEach((date) => {formatedDates.push(formatDate(date));});}
 
-var linechart;
+function formatDate(dateString) {
+  const nameofmonths = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  var date = new Date(dateString);
+  return `${date.getDate()} ${nameofmonths[date.getMonth()]}`;}
+
 function axesLinearChart() {
+  var linechart;
   if (linechart) {
     linechart.destroy();}
 
@@ -111,20 +127,3 @@ function axesLinearChart() {
     },
   });
 }
-
-function formatDate(dateString) {
-  const nameofmonths = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  var date = new Date(dateString);
-  return `${date.getDate()} ${nameofmonths[date.getMonth()]}`;}
